@@ -1,0 +1,147 @@
+.page-header {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  border-bottom: 1px solid #dedede;
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {  
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.youtube-logo {
+  height: 20px;
+  cursor: pointer;
+  color: rgb(33, 37, 41)
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 75px;
+  margin-right: 40px;
+  max-width: 495px;
+}
+
+.search-bar {
+  height: 36px;
+  flex: 1;
+  width: 0;
+  background-color: rgb(255, 255, 255);
+  cursor: text;
+  padding-left: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 2px #eeeeee;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.search-button {
+  height: 40px;
+  width: 64px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-img {
+  height: 24px;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+}
+
+.voice-search-button {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color:#f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.voice-search-img {
+  height: 24px;
+  vertical-align: middle;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  margin-right: 24px;
+  margin-left: 29px;
+  flex-shrink: 0;
+}
+
+.upload {
+  height: 24px;
+  cursor: pointer;
+}
+
+.notifs-container {
+  position: relative;
+}
+
+.notifs {
+  height: 24px;
+  cursor: pointer;
+}
+
+.notifs-badge {
+  display: flex;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: #e41313;
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 9px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  pointer-events: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-user-pic {
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+

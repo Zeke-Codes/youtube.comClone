@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 56px;
+  background-color: white;
+  width: 72px;
+  padding-top: 5px;
+}
+
+.sidebar-button {
+  font-size: 10px;
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-button:hover {
+  background-color: rgb(240, 240, 240);
+
+}
+
+.sidebar-button img {
+  height: 24px;
+}
