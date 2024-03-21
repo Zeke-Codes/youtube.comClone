@@ -9,21 +9,26 @@
   left: 0;
   right: 0;
   position: fixed;
-  border-bottom: 1px solid #dedede;
   z-index: 100;
 }
 
-.left-section {
+.start {
   display: flex;
   align-items: center;
 }
 
 .hamburger-menu {  
   height: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-  cursor: pointer;
+  margin-left: 16px;
+  margin-right: 16px;
   vertical-align: middle;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hamburger-menu:hover {
+  background-color: rgb(240, 240, 240, 0.8);
 }
 
 .youtube-logo {
@@ -32,7 +37,16 @@
   color: rgb(33, 37, 41)
 }
 
-.middle-section {
+.country-code {
+  font-family: Roboto, Arial, sans-serif;
+  color: rgb(132, 132, 132);
+  font-size: 10px;
+  font-weight: 400;
+  margin: 12px 0 0 2px;
+  height: 44px;
+}
+
+.center {
   display: flex;
   align-items: center;
   flex: 1;
@@ -42,15 +56,19 @@
 }
 
 .search-bar {
-  height: 36px;
+  height: 38px;
+  display: flex;
   flex: 1;
+  flex-direction: row;
+  align-items: center;
   width: 0;
   background-color: rgb(255, 255, 255);
   cursor: text;
-  padding-left: 12px;
+  padding: 0 4px 0 16px;
   border: 1px solid #cccccc;
-  border-radius: 2px;
+  border-radius: 40px 0 0 40px;
   box-shadow: inset 0px 1px 2px #eeeeee;
+  margin-left: 10px;
 }
 
 .search-bar::placeholder {
@@ -59,12 +77,12 @@
 }
 
 .search-button {
-  height: 40px;
+  height: 39px;
   width: 64px;
   cursor: pointer;
   background-color: #f7f7f7;
   border: 1px solid #cccccc;
-  border-radius: 2px;
+  border-radius: 0 40px 40px 0;
   border-left: none;
   display: flex;
   align-items: center;
@@ -83,7 +101,7 @@
   width: 40px;
   border-radius: 20px;
   border: none;
-  background-color:#f9f9f9;
+  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +113,7 @@
   vertical-align: middle;
 }
 
-.right-section {
+.end {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,20 +138,24 @@
 }
 
 .notifs-badge {
-  display: flex;
   position: absolute;
-  top: -2px;
-  right: -5px;
-  background-color: #e41313;
-  color: white;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 9px;
-  padding: 2px 5px;
-  border-radius: 10px;
-  border: 1px solid black;
+  top: -4px;
+  left: 12px;
+  display: inline-block;
+  padding: 0 4px;
+  min-width: 8px;
+  max-width: 18px;
+  height: 16px;
+  border: 1px solid #212121;
+  border-radius: 22px;
+  text-align: center;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #fff;
+  background-color: #cc0000;
   pointer-events: none;
-  align-items: center;
-  justify-content: center;
 }
 
 .current-user-pic {

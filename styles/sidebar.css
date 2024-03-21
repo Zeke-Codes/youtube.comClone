@@ -4,8 +4,9 @@
   bottom: 0;
   top: 56px;
   background-color: white;
-  width: 72px;
+  width: 64px;
   padding-top: 5px;
+  z-index: 200;
 }
 
 .sidebar-button {
@@ -19,10 +20,18 @@
 }
 
 .sidebar-button:hover {
-  background-color: rgb(240, 240, 240);
-
+  background-color: rgb(240, 240, 240, 0.8);
+  border-radius: 12px;
+  margin-left: 4px;
 }
 
 .sidebar-button img {
   height: 24px;
+  margin-bottom: 6px;
+}
+
+.sidebar-button div {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
 }
