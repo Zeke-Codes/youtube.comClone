@@ -1,6 +1,24 @@
-.YouTube.com-Clone {
+.youtube.comClone {
   font-family: Roboto, Arial, sans-serif;
   background-color: #f9f9f9;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 30px;
+  padding-top: 57px;
+  padding-left: 72px;
+  color: (0, 0, 0, 0.9); 
+}
+
+.video-card {
+  cursor: pointer;
+}
+
+.video-card:hover .video-time {
+  display: none;
 }
 
 .thumbnail {
@@ -16,40 +34,27 @@
 
 .video-time {
   color: white;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(21, 21, 21, 0.9);
   position: absolute;
-  bottom: 12px;
+  bottom: 9px;
   right: 4px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
-  border-radius: 2px;
-  padding: 2px 4px;
-}
-
-.video-card {
-  cursor: pointer;
-}
-
-.video-card:hover .video-time {
-  display: none;
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 15px;
-  row-gap: 30px;
-  padding-top: 57px;
-  padding-left: 72px;
-  color: (0, 0, 0, 0.9); 
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 1px 4px;
 }
 
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr 
 }
+
+.profile-pic {
+  width: 36px;
+  border-radius: 50px;
+} 
 
 .video-caption {
   margin-top: 0;
@@ -64,7 +69,7 @@
 .content-creator {
   font-size: 12px;
   color: rgb(96, 96, 96);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
 }
@@ -83,8 +88,3 @@
   font-weight: bold;
   color: black;
 }
-
-.profile-pic {
-  width: 36px;
-  border-radius: 50px;
-}  

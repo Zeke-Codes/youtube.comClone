@@ -19,7 +19,7 @@
 
 .hamburger-menu {  
   height: 24px;
-  margin-left: 16px;
+  margin-left: 14px;
   margin-right: 16px;
   vertical-align: middle;
   padding: 8px;
@@ -28,7 +28,7 @@
 }
 
 .hamburger-menu:hover {
-  background-color: rgb(240, 240, 240, 0.8);
+  background-color: rgb(241, 241, 241, 0.8);
 }
 
 .youtube-logo {
@@ -52,7 +52,7 @@
   flex: 1;
   margin-left: 75px;
   margin-right: 40px;
-  max-width: 495px;
+  max-width: 650px;
 }
 
 .search-bar {
@@ -64,11 +64,10 @@
   width: 0;
   background-color: rgb(255, 255, 255);
   cursor: text;
-  padding: 0 4px 0 16px;
+  padding: 0 4px 0  16px;
   border: 1px solid #cccccc;
   border-radius: 40px 0 0 40px;
   box-shadow: inset 0px 1px 2px #eeeeee;
-  margin-left: 10px;
 }
 
 .search-bar::placeholder {
@@ -87,6 +86,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.search-button:hover {
+  background-color: rgb(240, 240, 240, 0.8);
+}
+
+.search-button .tooltip {
+  position: absolute;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: rgba(117, 117, 117, 0.9);
+  color: white;
+  padding: 8px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
 }
 
 .search-img {
@@ -105,7 +127,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 8px;
+  margin-left: 16px;
+}
+
+.voice-search-button:hover {
+  background-color: rgba(224, 223, 223, 0.8);
 }
 
 .voice-search-img {
@@ -113,23 +139,95 @@
   vertical-align: middle;
 }
 
+.voice-search-button .tooltip {
+  position: absolute;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: rgba(117, 117, 117, 0.9);
+  color: white;
+  padding: 9px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -40px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.voice-search-button:hover .tooltip {
+  opacity: 1;
+}
+
 .end {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 130px;
-  margin-right: 24px;
-  margin-left: 29px;
+  margin-right: 28px;
   flex-shrink: 0;
 }
 
-.upload {
+.create {
   height: 24px;
   cursor: pointer;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+.create:hover {
+  background-color: rgb(241, 241, 241, 0.8); 
+  border-radius: 50%; 
+}
+
+.create-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-container .tooltip {
+  position: absolute;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: rgba(117, 117, 117, 0.9);
+  color: white;
+  padding: 8px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  bottom: -45px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.create-container:hover .tooltip {
+  opacity: 1;
 }
 
 .notifs-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  margin-right: 12px;
+}
+
+.notifs-container .tooltip {
+  position: absolute;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: rgba(117, 117, 117, 0.9);
+  color: white;
+  padding: 8px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.notifs-container:hover .tooltip {
+  opacity: 1;
 }
 
 .notifs {
@@ -137,33 +235,43 @@
   cursor: pointer;
 }
 
+.notifs-container:hover::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(241, 241, 241, 0.8); 
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  z-index: -1;
+}
+
 .notifs-badge {
   position: absolute;
-  top: -4px;
-  left: 12px;
+  top: -2px;
+  left: 11px;
   display: inline-block;
-  padding: 0 4px;
-  min-width: 8px;
-  max-width: 18px;
-  height: 16px;
+  padding: 2px 5px;
+  min-width: 10px;
+  max-width: 20px;
+  height: 11px;
   border: 1px solid #212121;
-  border-radius: 22px;
+  border-radius: 8px;
   text-align: center;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 10px;
-  font-weight: 400;
-  line-height: 16px;
+  font-weight: 500;
+  line-height: 11px;
   color: #fff;
-  background-color: #cc0000;
+  background-color: #d70000;
   pointer-events: none;
 }
 
-.current-user-pic {
+.youtube-account-pic {
   height: 32px;
   cursor: pointer;
   border-radius: 16px;
   vertical-align: middle;
-  box-sizing: border-box;
 }
-
-

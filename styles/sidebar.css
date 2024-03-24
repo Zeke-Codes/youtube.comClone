@@ -17,12 +17,13 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  margin-left: 4px;
 }
 
 .sidebar-button:hover {
-  background-color: rgb(240, 240, 240, 0.8);
+  background-color: rgb(241, 241, 241, 0.8);
   border-radius: 12px;
-  margin-left: 4px;
 }
 
 .sidebar-button img {
