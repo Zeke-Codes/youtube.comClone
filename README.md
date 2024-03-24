@@ -54,7 +54,7 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 ## Acknowledgements
 
 This project is all thanks to the following people and resources:
- 1. Ing. Prince John Abakah, Philip Abakah Mensah(mobile dev @Strange-Philip) and Philemon Abakah Mensah(web dev @philemon1112) for the inspiration and tremendous support.
+ 1. Ing. Prince John Abakah, Philip Abakah Mensah @Strange-Philip (mobile dev) and Philemon Abakah Mensah @philemon1112 (web dev) for the inspiration and tremendous support.
  
  2. YouTube
   -  SuperSimpleDev
