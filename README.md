@@ -15,7 +15,7 @@ This project is a replica of the YouTube landing page, created as a practice pro
 
 ## Description
 
-The YouTube Clone project aims to replicate the appearance and basic functionality of the YouTube landing page. It provides an opportunity for developers to practice their HTML and CSS skills by recreating a real-world web page.
+The youtube.comClone project aims to replicate the appearance and basic functionality of the YouTube landing page. It provides an opportunity for developers to practice their HTML and CSS skills by recreating a real-world web page.
 
 
 ## Features
@@ -47,7 +47,7 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 - Fork the repository.
 - Create a new branch (git checkout -b "feature/new-feature").
 - Make your changes.
-- Commit your changes (git commit -am 'Add new feature').
+- Commit your changes (git commit -am "Add new feature").
 - Push to the branch (git push origin "feature/new-feature").
 - Create a new Pull Request.
 
