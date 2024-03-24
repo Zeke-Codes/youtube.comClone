@@ -1,6 +1,6 @@
 # youtube.comClone 
 
-This project is a replica of the YouTube landing page, created as a practice project for learning HTML and CSS.
+This project is a replica of the YouTube landing page, created as a practice project for learning HTML and CSS. It is still a WORK IN PROGRESS...
 
 
 ## Table of Contents 
