@@ -1,5 +1,4 @@
 .youtube.comClone {
-  font-family: Roboto, Arial, sans-serif;
   background-color: #f9f9f9;
 }
 
@@ -12,6 +11,12 @@
   padding-left: 72px;
   color: (0, 0, 0, 0.9); 
 }
+
+@media (max-width: 1120px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }  
+} 
 
 .video-card {
   cursor: pointer;
@@ -38,7 +43,6 @@
   position: absolute;
   bottom: 9px;
   right: 4px;
-  font-family: Roboto, Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
